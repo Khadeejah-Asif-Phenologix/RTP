@@ -13,7 +13,6 @@ function DataFetch() {
     }, [dispatch])
     return (
     <div>
-      <h1>User Data Lists</h1>
       {
         loading ? <h2>Loading .....</h2> : error ? <h2>{error}</h2> : <User users={users}/>
       }
